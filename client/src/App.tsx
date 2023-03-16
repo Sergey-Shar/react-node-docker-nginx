@@ -27,18 +27,18 @@ function App() {
 		event.preventDefault()
 		try {
 			const { data } = await axios.post<IAuthResponse>(URL_AUTH, values)
+			setValue({ userName: '', password: '' })
 			alert(data.message)
 		} catch (error) {
 			if (axios.isAxiosError(error)) {
 				alert(error.message)
 			}
-		} finally {
-			setValue({ userName: '', password: '' })
+			console.error(error)
 		}
 	}
 
 	return (
-		<form action="" onSubmit={handleSubmit}>
+		<form onSubmit={handleSubmit}>
 			<input
 				placeholder="name..."
 				name="userName"
@@ -54,7 +54,7 @@ function App() {
 				onChange={handleChange}
 			/>
 			<button disabled={isDisable} type="submit">
-				отправить
+				вход
 			</button>
 		</form>
 	)
