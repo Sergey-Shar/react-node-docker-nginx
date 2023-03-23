@@ -37,14 +37,14 @@ h1 {
 }
 
 form {
-display: flex;
-flex-direction: column;
-height: 200px;
-width: 250px;
-gap: 15px
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 250px;
+  gap: 15px;
 }
 
-input{
+input {
   height: 30px;
   border-radius: 8px;
   border: 1px solid transparent;

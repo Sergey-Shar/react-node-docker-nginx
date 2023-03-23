@@ -1,0 +1,6 @@
+node_modules
+vite.config.ts
+public
+dist
+Dockerfile
+nginx.conf
