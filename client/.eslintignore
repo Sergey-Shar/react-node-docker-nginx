@@ -4,3 +4,5 @@ public
 dist
 Dockerfile
 nginx.conf
+
+src
